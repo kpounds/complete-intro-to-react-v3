@@ -1,15 +1,11 @@
 {
   "scripts": {
-    "api": "node ratingsAPI.js",
     "format": "prettier --list-different --single-quote --print-width=120 webpack.config.js \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "watch": "webpack --watch",
-    "build": "webpack -p",
+    "build": "webpack",
     "build:dev": "webpack -d",
-    "dev": "NODE_ENV=development nodemon server.js",
-    "start": "NODE_ENV=server node server.js",
-    "test": "NODE_ENV=test jest",
-    "test:update": "NODE_ENV=test jest -u"
+    "dev": "NODE_ENV=development nodemon server.js"
   },
   "jest": {
     "snapshotSerializers": [

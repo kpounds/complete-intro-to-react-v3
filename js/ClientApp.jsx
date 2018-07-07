@@ -14,7 +14,7 @@ const MyFirstComponent = function () {
       React.createElement(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
       React.createElement(MyTitle, { title: 'Stranger Things', color: 'GreenYellow' }),
       React.createElement(MyTitle, { title: 'Rick and Morty', color: 'LimeGreen' }),
-      React.createElement(MyTitle, { title: 'Silicon Valley', color: 'peru' })
+      React.createElement(MyTitle, { title: 'House of Cards', color: 'peru' })
   )
 }
 
