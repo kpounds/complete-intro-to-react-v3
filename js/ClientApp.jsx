@@ -1,24 +1,24 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const MyTitle = function (props) {
+const MyTitle = function(props) {
+  const style = {color: props.color}
   return (
-      React.createElement('div', null,
-          React.createElement('h1', { style: { color: props.color } }, props.title)
-      )
-  )
-}
+    <div>
+      <h1 style={style}>{props.title}</h1>
+    </div>
+  );
+};
 
 const MyFirstComponent = function () {
-  return React.createElement('div', null, 
-      React.createElement(MyTitle, { title: 'Game of Thrones', color: 'YellowGreen' }),
-      React.createElement(MyTitle, { title: 'Stranger Things', color: 'GreenYellow' }),
-      React.createElement(MyTitle, { title: 'Rick and Morty', color: 'LimeGreen' }),
-      React.createElement(MyTitle, { title: 'House of Cards', color: 'peru' })
-  )
-}
+  return (
+    <div id="my-first-component">
+      <MyTitle title="Game of Thrones" color="YellowGreen" />
+      <MyTitle title="Stranger Things" color="GreenYellow" />
+      <MyTitle title="House of Cards" color="Peru" />
+      <MyTitle title="The Americans" color="burlywood" />
+    </div>
+  );
+};
 
-render(
-  React.createElement(MyFirstComponent),
-  document.getElementById('app')
-)
+render(<MyFirstComponent />, document.getElementById('app'));
