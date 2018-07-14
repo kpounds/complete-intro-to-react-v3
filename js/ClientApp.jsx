@@ -5,7 +5,7 @@ const App = () => (
   <div className="app">
     <div className="landing">
       <h1>video app</h1>
-      <inout type="text" placeholder="Search" />
+      <input type="text" placeholder="Search" />
       <a>or Browse All</a>
     </div>
   </div>
