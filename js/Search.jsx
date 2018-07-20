@@ -1,5 +1,10 @@
 import React from 'react';
+import preload from '../data.json';
 
-const Search = () => <h1>Hello! This is a search!</h1>
+const Search = () => (
+  <div className="search">
+    {preload.shows.map(show => <h3 key={show.imdbID}>{show.title}</h3>)}
+  </div>
+);
 
 export default Search;
