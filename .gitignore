@@ -11,4 +11,3 @@ _site/
 .sass-cache/
 *.iml
 .idea/
-flow-typed/npm/
